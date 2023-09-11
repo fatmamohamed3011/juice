@@ -1,0 +1,149 @@
+/* normalize */
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(99, 200, 207);
+}
+.main-nav{
+    text-align: center;
+    display: flex;
+    color:#fff;
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    gap:30% ;
+    padding-top: 30px;
+}
+.main-nav .a{
+    color: #ffffffdb;
+    font-size: 16px;
+}
+.main-nav .b{
+    color: #fff;
+    font-size: 30px;
+    font-family: cursive;
+}
+.main-nav .c{
+    display: flex;
+    color: #ffffffdb;
+    font-size: 16px;
+    gap:20px ;
+}
+.main-nav .c i:hover{
+    cursor: pointer;
+    color: gold;
+}
+.hr{
+    width: 90%;
+    height: .5px;
+    background-color: #ffffff91;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+@media (max-width:1115px) {
+    .main-nav{
+        gap:20% ;
+    }
+    .hr{
+        width: 100%;
+    }
+}
+@media (max-width:720px) {
+    .main-nav .a{
+    display: none;
+    }
+    .main-nav .c{
+    display: none;
+    }
+}
+.brunch-nav{
+    width: 100%;
+    height: 50px;
+    padding-top: 30px;
+}
+.brunch-nav ul{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    gap:30px ;
+    list-style-type: none;
+    font-family: cursive;
+
+}
+.brunch-nav ul li a{
+    color:#fff;
+    text-decoration: none;
+    transition-duration: .5s;
+    font-size: 15px;
+}
+.brunch-nav ul li a:hover{
+    color: gold;
+}
+
+@media (max-width:520px) {
+    .brunch-nav{
+        display: none;
+    }
+}
+
+.title{
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    margin-top: 7%;
+}
+.title h1{
+    font-family: cursive;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.title p{
+    font-size: 18px;
+    color: #ffffffee;
+    line-height: 25px;
+}
+.title button{
+    margin-top: 30px;
+    padding: 15px 25px ;
+    border-radius: 5px;
+    border: none;
+    color: #000;
+    background-color: rgba(255, 217, 0, 0.897);
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.items{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap:5% ;
+    margin-top: 5%;
+    margin-bottom: 15%;
+}
+.items img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+@media (max-width:1130px) {
+    .items{
+        display: grid;
+        grid-template-columns: repeat(2,25%);
+    }
+}
+@media (max-width:950px) {
+    .items{
+        display: grid;
+        grid-template-columns: repeat(1,80%);
+    }
+    .items img{
+        width: 100%;
+        height: 270px;
+        border-radius: 5%;
+    }
+}
